@@ -1,0 +1,35 @@
+div h1{
+    color: red;
+}
+/*Seleção pela substring*/
+a[href*="biografia"]{
+    text-decoration: none;
+}
+/*Manipulando pelo pseudoelemento*/
+p::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+p::first-line{
+    color: blue;
+}
+
+/*Fonte 
+p {
+    font-family: Arial, Helvetica, sans-serif; /Familia/
+    font-size: 20px; /Tamanho da Fonte/
+    font-style: italic; /Estilo da Fonte/
+    text-transform: uppercase; /Ele deixa as letras maiusculas/
+    text-align: center; /Alinhar texto/
+    text-indent: 20px; /Cria um parágrafo/
+
+    letter-spacing: 3px; /Espaçamento de letras/
+    word-spacing: 5px; /Espaçamenton entre palavras/
+    line-height: 20px; /Altura das linhas/
+
+    color: green;
+    background-color: black;
+}
+a {
+    text-decoration: none; /Ele tira ou coloca o sublinhado/
+}

@@ -1,0 +1,17 @@
+body{
+    background-color: cornsilk;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgrey;
+    
+}
+.baleia{
+    
+    color: gray;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: rgb(247, 189, 119);
+    height: 100px;
+    
+}

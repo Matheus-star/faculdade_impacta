@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="leao.jpg">
+    <title>Entre em Contato</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+             <a href="index.html">Página Inicial</a> | <a href="tribo.html">Tribo de Judá</a> | <a href="contato.html">Entre em Contato</a>
+        </nav>
+     </header>
+     <main>
+        <form action="" method="post">
+            <!--Form dados pessoais-->
+            <div>
+                <label for="user">Usuário: </label><br>
+                <input type="text" name="usuario" id="user" required  maxlength="15" placeholder="Digite seu Nome:">
+            </div> 
+    
+            <div>
+                <label for="pass">Senha: </label><br>
+                <input type="password" name="senha" id="pass" required>
+            </div>
+    
+            <div>
+                <label for="tx-email">Email: </label>
+                <input type="email" name="email" id="tx-email" required>
+            </div>
+    
+            <div>
+                <label for="tx-datahora">Data e Hora: </label>
+                <input type="datetime-local" name="data" id="tx-datahora" required>
+            </div>
+    
+            <div>
+                <label for="tx-numero">Número: </label>
+                <input type="number" name="numero" id="tx-numero" required>
+            </div>
+           
+            <div>
+                <label for="tx-menssagem">Menssagem: </label><br>
+                <textarea name="menssagem" id="tx-menssagem"></textarea>
+            </div>
+
+            <div>
+                <label for="estados-brasileiros">Selecione seu Estado de Nascimento: </label>
+                <select name="estados-brasileiros" id="estados-brasileiros" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP" selected>São Paulo</option> <!--São Paulo por padrão.-->
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tx-informe">Como conheceu nosso site:</label><br>
+                <select name="informativo" id="tx-informe">
+                    <option value="amigos">Amigos</option>
+                    <option value="familia">Familia</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="redes-sociais">Redes Sociais</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Profetas</legend>
+                <input type="checkbox" name="profetas" id="rb-moises">
+                <label for="rb-moises">Moises</label>
+
+                <input type="checkbox" name="profetas" id="rb-jaco" value="jaco">
+                <label for="rb-jaco">Jáco</label>
+
+                <input type="checkbox" name="profetas" id="rb-elias" value="elias">
+                <label for="rb-elias">Elias</label>
+
+                <input type="checkbox" name="profetas" id="rb-jose" value="jose">
+                <label for="rb-jose">José</label>
+
+                <input type="checkbox" name="profetas" id="rb-jeremias" value="jeremias">
+                <label for="rb-jeremias">Jeremias</label>
+
+                <input type="checkbox" name="profetas" id="rb-elizeu" value="elizeu">
+                <label for="rb-elizeu">Elizeu</label>
+
+                <input type="checkbox" name="profetas" id="rb-noe" value="noe">
+                <label for="rb-noe">Noé</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reis</legend>
+                <input type="radio" name="rei" id="rb-davi" value="davi">
+                <label for="rb-davi">Davi</label>
+                
+                <input type="radio" name="rei" id="rb-salomao">
+                <label for="rb-salomao">Salomão</label>
+
+            </fieldset>
+            <br>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+    
+        </form>
+
+     </main>
+</body>
+</html>

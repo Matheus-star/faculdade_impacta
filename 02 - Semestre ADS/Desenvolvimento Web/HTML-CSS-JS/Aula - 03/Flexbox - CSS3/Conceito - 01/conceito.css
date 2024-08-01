@@ -1,0 +1,25 @@
+.conteudo{
+   
+    height: 500px;
+
+    display: flex;
+    flex-direction: row; /*colmn; row-reverse; colmn-reverse */      /*display-direction é utilizado para definir a direção do item */
+
+    flex-wrap: wrap; /*wrap; nowrap; wrap-reverse /* Define se vai aver uma quebra de linha ou não */
+    
+    flex-flow: row wrap;         /* o flex-flow é o resumo dos dois elementos acima */
+    justify-content: flex-start; /*flax-start; flex-end; center; space-between; space-around; */ /* justify-content é utilizado para fazer um alinhamento orizontal*/
+    align-items: stretch; /* tretch; flex-start; flex-end; center; basenline; */ /* align-item é utilizado para alinhar orizontalmente  */
+
+    align-content: stretch /*flex-start; flex-end; center; space-between; space-around; stretch; */ /* faz o alinhamento vertical mas só quando há quebra de linha wrap */
+
+
+}
+.item{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    color: blue;
+}

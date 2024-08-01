@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="form.jpg">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <form method="POST" action="recebe_dados.html"><!--Formulário-->
+        <!--Método POST envia para o servidor-->
+        <div>
+            <label for="user">Usuário: </label> <!--Tag label - rótulo do input-->
+            <input type="text" name="usuario" id="user" required  maxlength="15" placeholder="Digite seu Nome:">
+            <!--maxlength de caracteres permitido-->
+            <!--required readonly value"Matheus" -  Valor já carregado que não pode ser alterado pelo usuário.-->
+        </div> 
+
+        <div>
+            <label for="pass">Senha: </label>
+            <input type="password" name="senha" id="pass">
+        </div>
+
+        <div> <!--Campos a baixo são mais novos no HTML-->
+            <label for="tx-email">Email: </label>
+            <input type="email" name="email" id="tx-email">
+        </div>
+
+        <div>
+            <label for="tx-datahora">Data e Hora: </label>
+            <input type="datetime-local" name="data" id="tx-datahora">
+        </div>
+
+        <div>
+            <label for="tx-numero">Número: </label>
+            <input type="number" name="numero" id="tx-numero">
+        </div>
+       
+        <div>
+            <label for="tx-menssagem">Menssagem: </label><br>
+            <textarea name="menssagem" id="tx-menssagem"></textarea>
+        </div>
+
+
+        <!--Estados Brasileiros-->
+        <div>
+            <label for="estados-brasileiros">Selecione seu Estado: </label>
+            <select name="estados-brasileiros" id="estados-brasileiros">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP" selected>São Paulo</option> <!--São Paulo por padrão.-->
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+
+        <!--Caixas de Marcação-->
+        <div> <!--Caixa de Marcação que seleciona várias-->
+            <fieldset>
+                <legend>Selecione seu turno:</legend>
+                <input type="checkbox" name="turno" id="cb-manha" value="Manhã"> <label for="cb-manha" checked>Manhã</label>  
+                <input type="checkbox" name="turno" id="cb-tarde" value="Tarde"> <label for="cb-tarde">tarde</label>
+                <input type="checkbox" name="turno" id="cb-noite" value="Noite"> <label for="cb-noite">Noite</label>
+            </fieldset>
+        </div>
+        <div> <!--Caixa permite apenas um da seleção-->
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" name="sexo" id="sx-masculino" value="Masculino" checked><label for="sx-masculino">Masculino:</label>
+                <input type="radio" name="sexo" id="sx-feminino" value="Feminino"><label for="sx-feminino">Feminino:</label>
+            </fieldset>
+        </div>
+
+
+       <!-- 
+        <div>  Método Antigo
+            <input type="submit" value="Enviar"> Butão envia dados para o banco de dados
+            <input type="button" value="Click"> Butão customizado no javascript
+            <input type="reset" value="Limpar">
+        </div>
+         -->
+
+        <div> <!--Método Novo-->
+            <button type="submit">Enviar</button><!--Tag Button aceita imagens-->
+            <button type="button">Click</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>

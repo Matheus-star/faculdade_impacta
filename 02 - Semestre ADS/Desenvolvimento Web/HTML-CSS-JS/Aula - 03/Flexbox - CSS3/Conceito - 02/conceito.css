@@ -1,0 +1,41 @@
+.conteudo{
+    background-color: rgb(240, 8, 8);
+    height: 500px;
+
+    display: flex;
+    flex-direction: row; /*colmn; row-reverse; colmn-reverse; row; */      /*display-direction é utilizado para definir a direção do item */
+
+    flex-wrap: nowrap; /*wrap; nowrap; wrap-reverse /* Define se vai aver uma quebra de linha ou não. padrão 'nowrap' */
+    
+   /* flex-flow: column wrap;          o flex-flow é o resumo dos dois elementos acima */
+    justify-content: flex-start; /*flax-start; flex-end; center; space-between; space-around; */ /* justify-content é utilizado para fazer um alinhamento orizontal*/
+    align-items: stretch; /* tretch; flex-start; flex-end; center; basenline; */ /* align-item é utilizado para alinhar orizontalmente  */
+
+    align-content: flex-start /*flex-start; flex-end; center; space-between; space-around; stretch; */ /* faz o alinhamento vertical mas só quando há quebra de linha wrap */
+   
+   
+
+}
+.item{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    flex-grow: 1; /* está relacionado com a largura, ele deixa por padrão todos com a mesma largura  */
+    flex-basis: 300px; /* está relacionado a largura incial dos elementos */
+    flex-shrink: 1; 
+}
+ /*
+.article-01 { order: 2;} /*order: faz trocar a posição dos intens*/ /*
+.article-02 { order: 3; align-self: auto;} /*align-self: auto   align-self: center*//* align-self: serve para mostrar aonde alinhar seus elementos */ /*
+.article-03 { order: 4;}
+
+.article-04 { order: 1;} */
+/*
+.article-01 { flex-grow: 3;}  quando fazemos isso queremos dizer que o article irá ocupar 3 vezes mais de largura que os demais */
+.article-01 {}
+.article-02 {flex-shrink: 3;} /* flex-shrink: 3; ele diminui o tamanho do elemento, no nosso caso 3 vezes menor */
+.article-03 {}
+.article-04 {}

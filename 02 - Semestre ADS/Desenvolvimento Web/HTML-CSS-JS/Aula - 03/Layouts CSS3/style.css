@@ -1,0 +1,11 @@
+div{
+    background-color: brown;
+    width: 1000px;
+}
+@media screen and (max-width: 900px) { /* Quando a tela estiver no maximo até 900px execute essas configurações a baixo. */
+    div{
+        background-color: green;
+        width: 100px;
+    }
+    
+}
